@@ -89,7 +89,7 @@
           }
         });
         // 拼接显示字符串
-        this.print = '    "prefix": "' + this.prefix + '",\n' + '"body": [\n' + this.json + '],\n' + '"description":' + '"' + this.description + '"'
+        this.print = '"prefix": "' + this.prefix + '",\n' + '"body": [\n' + this.json + '],\n' + '"description":' + '"' + this.description + '"'
         // 替换$符为转义
         this.print = this.print.replace(/[\$]/g, '\\\\$')
       },
