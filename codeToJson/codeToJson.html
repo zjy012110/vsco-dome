@@ -24,19 +24,35 @@
     #main .content .btn {
       width: 40px;
     }
+
+    #main .content .code {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #main .content .code input {
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 
 <body>
   <div id="app">
+    <div>给我变</div>
     <div id="main">
       <div class="content">
-        <textarea v-model="code" rows="40" cols="60"></textarea>
+        <div class="code">
+          <input v-model="prefix" type="text" placeholder="触发字段">
+          <input v-model="description" type="text" placeholder="说明信息">
+          <textarea v-model="code" rows="35" cols="60"></textarea>
+        </div>
         <div class="btn">
           <button @click="change">转换</button>
           <!-- <button @click="reset">重置</button> -->
         </div>
-        <textarea v-model="json" rows="40" cols="60"></textarea>
+        <div class="print">
+          <textarea v-model="print" rows="40" cols="60"></textarea>
+        </div>
       </div>
     </div>
   </div>
@@ -48,8 +64,11 @@
     el: '#app',
     data: {
       message: 'Hello Vue!',
-      code: '',
-      json: ''
+      prefix: '', // 触发字段
+      code: '', // 代码片段
+      description: '', // 描述信息
+      json: '', // 转换的代码片段
+      print: '' // 输出内容
     },
     methods: {
       // 代码转换json方法
@@ -62,15 +81,17 @@
         }
         list = this.code.split(/[\r\n]+/)
         list.forEach((item, i) => {
-          console.log(i, list.length);
           item = `"${item}"`
           if (i !== (list.length - 1)) {
-            console.log(item);
             this.json += item + ",\n"
           } else {
             this.json += item
           }
         });
+        // 拼接显示字符串
+        this.print = '    "prefix": "' + this.prefix + '",\n' + '"body": [\n' + this.json + '],\n' + '"description":' + '"' + this.description + '"'
+        // 替换$符为转义
+        this.print = this.print.replace(/[\$]/g, '\\\\$')
       },
       // reset () {
       //   this.
