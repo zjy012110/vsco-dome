@@ -19,7 +19,12 @@ function activate (context) {
   // The commandId parameter must match the command field in package.json
   let disposable = vscode.commands.registerCommand('extension.helloWorld', function () {
     // The code you place here will be executed every time your command is executed
-
+    // 获得当前窗口对象
+    const editor = vscode.window.activeTextEditor;
+    // 获取当前选中内容
+    let selection = editor.selection
+    let text = editor.document.getText(selection)
+    console.log(text);
     // Display a message box to the user
     vscode.window.showInformationMessage('Hello World!');
   });
