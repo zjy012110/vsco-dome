@@ -1,0 +1,20 @@
+{
+  "可编辑表格组件": {
+    "prefix": "cantab",
+    "body": [
+      "<canEditTable :tabData=\"dataForm.openCreditEntryList\"",
+      "              :tabTagData=\"tabTagName\"",
+      "              :tabRules=\"tabRules\"",
+      "              :canEdit=\"true\"",
+      "              :showHandle=\"true\"",
+      "              :showSelection=\"true\"",
+      "              ref=\"tabEntry\"",
+      "              :getSummaries=\"getSummaries\"",
+      "              :summary=\"true\"",
+      "              showAdd",
+      "              @deleteItem=\"deleteRisk\">",
+      "</canEditTable>"
+    ],
+    "description": "可编辑表格组件"
+  }
+}

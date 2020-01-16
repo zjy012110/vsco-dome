@@ -4,7 +4,7 @@
     "body": [
       "this.\\$http({",
       "  url: this.\\$http.adornUrl(window.SITE_CONFIG.contextPath + '$1'),",
-      "  method: '$2',",
+      "  method: '${2:post}',",
       "  data: {$3}",
       "}).then(({ data }) => {",
       "   ",
@@ -17,11 +17,11 @@
   "放大镜选择事件": {
     "prefix": "dias",
     "body": [
-      "selectData (val) {",
+      "select${1:Data} (val) {",
       "  if (!val) {",
-      "    this.\\$set(this.data, 'Id', null)",
+      "    this.\\$set(this.${2:data}, '${3:Id}', null)",
       "  } else if (val) {",
-      "    this.\\$set(this.data, 'Id', val.id)",
+      "    this.\\$set(this.${2:data}, '${3:Id}', val.id)",
       "  }",
       "},"
     ],
