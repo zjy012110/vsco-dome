@@ -71,6 +71,13 @@
       print: '' // 输出内容
     },
     methods: {
+      validation(str) {
+        if (str.indexOf("\"") >= 0) {
+          return true;
+        } else {
+          return false;
+        }
+      },
       // 代码转换json方法
       change() {
         let list = []
@@ -81,7 +88,13 @@
         }
         list = this.code.split(/[\r\n]+/)
         list.forEach((item, i) => {
+          // if (this.validation(item)) {
+          //   item = `'${item}'`
+          // } else {
+          // 将代码片段中的双引号转义
+          item = item.replace(/[\"]/g, '\\\"')
           item = `"${item}"`
+          // }
           if (i !== (list.length - 1)) {
             this.json += item + ",\n"
           } else {
@@ -89,7 +102,7 @@
           }
         });
         // 拼接显示字符串
-        this.print = '"prefix": "' + this.prefix + '",\n' + '"body": [\n' + this.json + '],\n' + '"description":' + '"' + this.description + '"'
+        this.print = '"prefix": "' + this.prefix + '",\n' + '"body": [\n' + this.json + '\n],\n' + '"description":' + '"' + this.description + '"'
         // 替换$符为转义
         this.print = this.print.replace(/[\$]/g, '\\\\$')
       },
