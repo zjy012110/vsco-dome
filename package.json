@@ -10,7 +10,10 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.helloWorld"
+    "onCommand:extension.helloWorld",
+    "onLanguage:javascript",
+    "onLanguage:vue",
+    "onLanguage:html"
   ],
   "main": "./extension.js",
   "contributes": {
@@ -47,6 +50,18 @@
         "language": "javascript",
         // 片段文件路径
         "path": "./snippets/javascript.json"
+      },
+      {
+        // 代码片段作用于那种语言
+        "language": "html",
+        // 片段文件路径
+        "path": "./snippets/html.json"
+      },
+      {
+        // 代码片段作用于那种语言
+        "language": "vue",
+        // 片段文件路径
+        "path": "./snippets/vue.json"
       }
     ]
   },
