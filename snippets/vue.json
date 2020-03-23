@@ -16,5 +16,32 @@
       "</canEditTable>"
     ],
     "description": "可编辑表格组件"
+  },
+  "列表搜索栏组件": {
+    "prefix": "listFilter",
+    "body": [
+      "<listFilter @handleSearch=\"handleSearch\"",
+      "            @handleReset=\"handleReset\">",
+      "  <div slot=\"form\"",
+      "       slot-scope=\"props\">",
+      "         <el-form class=\"displayFlex\"",
+      "                   :model=\"formSearch\"",
+      "                   size=\"small\"",
+      "                   ref=\"formSearch\">",
+      "          <el-row>         ",
+      "            <el-col :sm=\"12\"",
+      "                    :md=\"12\"",
+      "                    :lg=\"8\"",
+      "                    :xl=\"8\">",
+      "              <el-form-item prop='${1}'>",
+      "                <!-- 搜索条件 -->",
+      "              </el-form-item>",
+      "         </el-col>",
+      "      <el-row>",
+      "    </el-form>",
+      "  </div>",
+      "</listFilter>"
+    ],
+    "description": "列表搜索栏组件"
   }
 }
