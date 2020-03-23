@@ -7,13 +7,13 @@
     "vscode": "^1.41.0"
   },
   "categories": [
-    "Other"
+    "Snippets"
   ],
   "activationEvents": [
-    "onCommand:extension.helloWorld",
     "onLanguage:javascript",
     "onLanguage:vue",
-    "onLanguage:html"
+    "onLanguage:html",
+    "onLanguage:vuejs"
   ],
   "main": "./extension.js",
   "contributes": {
@@ -29,10 +29,8 @@
     },
     "configuration": {
       "type": "object",
-      // 显示在配置页左侧
       "title": "项目通用代码片段",
       "properties": {
-        // 全局唯一的配置ID
         "thisVscodePlugin": {
           "description": "项目通用代码片段"
         }
@@ -46,21 +44,19 @@
     ],
     "snippets": [
       {
-        // 代码片段作用于那种语言
         "language": "javascript",
-        // 片段文件路径
         "path": "./snippets/javascript.json"
       },
       {
-        // 代码片段作用于那种语言
         "language": "html",
-        // 片段文件路径
         "path": "./snippets/html.json"
       },
       {
-        // 代码片段作用于那种语言
         "language": "vue",
-        // 片段文件路径
+        "path": "./snippets/vue.json"
+      },
+      {
+        "language": "vue-html",
         "path": "./snippets/vue.json"
       }
     ]
