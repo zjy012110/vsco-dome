@@ -1,0 +1,16 @@
+{
+  "引入可编辑列表canEditTable": {
+    "prefix": "improt canEditTable",
+    "body": [
+      "import canEditTable from '@/components/canEditTable'"
+    ],
+    "description": "引入可编辑列表canEditTable"
+  },
+  "引入列表搜索栏listFilter": {
+    "prefix": "improt listFilter",
+    "body": [
+      "import listFilter from '@/components/list-filter'"
+    ],
+    "description": "引入列表搜索栏listFilter"
+  },
+}
