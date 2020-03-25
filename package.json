@@ -3,6 +3,7 @@
   "displayName": "项目通用代码片段",
   "description": "项目通用代码片段插件",
   "icon": "images/icon.png",
+  "publisher": "zane",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.41.0"
