@@ -1,7 +1,7 @@
 {
-  "name": "vscode-dome",
-  "displayName": "vscode-dome",
-  "description": "vscode-dome插件",
+  "name": "code-snippets-dome",
+  "displayName": "项目通用代码片段",
+  "description": "项目通用代码片段插件",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.41.0"
@@ -48,8 +48,8 @@
         "path": "./snippets/javascript.json"
       },
       {
-        "language": "html",
-        "path": "./snippets/html.json"
+        "language": "javascript",
+        "path": "./snippets/import.json"
       },
       {
         "language": "vue",
