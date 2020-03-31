@@ -13,6 +13,13 @@
     ],
     "description": "引入列表搜索栏listFilter"
   },
+  "引用列表表格组件listCommon": {
+    "prefix": "import listCommon",
+    "body": [
+      "import listCommon from '@/components/basComponents/list-common'"
+    ],
+    "description": "引用列表表格组件listCommon"
+  },
   "引入放大镜组件diaSelect": {
     "prefix": "improt diaSelect",
     "body": [

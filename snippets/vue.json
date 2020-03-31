@@ -94,5 +94,27 @@
       ""
     ],
     "description": "数值组件-小数位,千分位控制: dataType 数值类型：(数量：qty   金额：amount  汇率：exchange  税率：taxRate 单价：price)"
+  },
+  "列表表格组件listCommon": {
+    "prefix": "listCommon",
+    "body": [
+      "<listCommon :fn=\"add\"",
+      "            :showEdit=\"true\"",
+      "            :table-list=\"tariffsArray\"",
+      "            :columnList=\"columnArray\"",
+      "            :show-selection=\"true\"",
+      "            :isExport='false'",
+      "            :dataListLoading=\"loadState\"",
+      "            :show-order=\"true\"",
+      "            :showBlank=\"false\"",
+      "           :handleSelectionChange=\"handleSelectionChange\">",
+      "   <template slot=\"tabButton\">",
+      "        <el-button type=\"primary\"",
+      "                   size=\"mini\"",
+      "                   @click=\"addPage\">新增</el-button>",
+      "   </template>",
+      "</listCommon>"
+    ],
+    "description": "列表表格组件listCommon"
   }
 }
