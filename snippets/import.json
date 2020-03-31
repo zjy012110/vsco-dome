@@ -33,5 +33,12 @@
       "import numeric from '@/components/numeric'"
     ],
     "description": "引入数值组件numeric"
+  },
+  "引入公共合计方法": {
+    "prefix": "improt getSummariesUtil",
+    "body": [
+      "import { getSummariesUtil } from '@/utils'"
+    ],
+    "description": "引入公共合计方法"
   }
 }

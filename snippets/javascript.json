@@ -54,5 +54,22 @@
       "this.\\$message.error('${1:message}')"
     ],
     "description": "错误消息提示: type(消息提示类型) 错误：error"
+  },
+  "公共合计方法": {
+    "prefix": "getSummariesUtil",
+    "body": [
+      "getTotal (param) {  // 自定义合计信息显示",
+      "    // 定义需合计字段",
+      "    let columsList = [",
+      "      ['count', null]",
+      "    ]",
+      "    let [sums, columsMap] = getSummariesUtil(param, columsList)",
+      "    // 对合计值获取、赋值  ",
+      "    this.\\$set(this, 'totalCount', sums[columsMap.get('count')])",
+      "   ",
+      "   return sums",
+      "}"
+    ],
+    "description": "公共合计方法，columsList中[]第一个参数传入要合计的字段，第二个参数为小数位控制"
   }
 }
