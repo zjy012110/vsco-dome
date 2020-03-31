@@ -15,7 +15,7 @@
     "description": "http请求 -- url请求地址| method请求方式(get OR post)| data OR params (请求传参形式，默认data)"
   },
   "放大镜选择事件": {
-    "prefix": "dias",
+    "prefix": "diaselect",
     "body": [
       "select${1:Data} (val) {",
       "  if (!val) {",
@@ -26,5 +26,33 @@
       "},"
     ],
     "description": "diaSelect(放大镜选择事件)"
+  },
+  "消息提示": {
+    "prefix": "$message",
+    "body": [
+      "this.\\$message.${1:type}('${2:message}')"
+    ],
+    "description": "消息提示: type(消息提示类型) 成功：success, 警告：warning, 错误：error, 一般：无参数"
+  },
+  "成功消息提示": {
+    "prefix": "$message.success",
+    "body": [
+      "this.\\$message.success('${1:message}')"
+    ],
+    "description": "成功消息提示: type(消息提示类型) 成功：success"
+  },
+  "警告消息提示": {
+    "prefix": "$message.warning",
+    "body": [
+      "this.\\$message.warning('${1:message}')"
+    ],
+    "description": "警告消息提示: type(消息提示类型) 警告：warning"
+  },
+  "错误消息提示": {
+    "prefix": "$message.error",
+    "body": [
+      "this.\\$message.error('${1:message}')"
+    ],
+    "description": "错误消息提示: type(消息提示类型) 错误：error"
   }
 }

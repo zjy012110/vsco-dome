@@ -20,4 +20,11 @@
     ],
     "description": "引入放大镜组件diaSelect"
   },
+  "引入数值组件numeric": {
+    "prefix": "improt numeric",
+    "body": [
+      "import numeric from '@/components/numeric'"
+    ],
+    "description": "引入数值组件numeric"
+  }
 }

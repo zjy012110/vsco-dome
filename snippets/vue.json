@@ -1,6 +1,6 @@
 {
   "可编辑表格组件": {
-    "prefix": "cantab",
+    "prefix": "canEditTable",
     "body": [
       "<canEditTable :tabData=\"dataForm.openCreditEntryList\"",
       "              :tabTagData=\"tabTagName\"",
@@ -51,7 +51,7 @@
       "           v-model=\"\"",
       "           @changeData=\"selectData\"></diaSelect>"
     ],
-    "description": "放大镜组件-类型配置"
+    "description": "放大镜组件-类型配置(diaSelectType传入放大镜类型，如：customer)"
   },
   "放大镜组件-表格型(手动配置)": {
     "prefix": "diaSelectTable",
@@ -85,5 +85,14 @@
       ""
     ],
     "description": "放大镜组件-树型(手动配置)"
+  },
+  "数值组件-小数位,千分位控制": {
+    "prefix": "numeric",
+    "body": [
+      "<numeric dataType='amount'",
+      "         v-model=\"\"></numeric>",
+      ""
+    ],
+    "description": "数值组件-小数位,千分位控制: dataType 数值类型：(数量：qty   金额：amount  汇率：exchange  税率：taxRate 单价：price)"
   }
 }
