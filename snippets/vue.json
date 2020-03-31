@@ -43,5 +43,47 @@
       "</listFilter>"
     ],
     "description": "列表搜索栏组件"
+  },
+  "放大镜组件(类型配置)": {
+    "prefix": "diaSelectAuto",
+    "body": [
+      "<diaSelect diaSelectType=\"\"",
+      "           v-model=\"\"",
+      "           @changeData=\"selectData\"></diaSelect>"
+    ],
+    "description": "放大镜组件-类型配置"
+  },
+  "放大镜组件-表格型(手动配置)": {
+    "prefix": "diaSelectTable",
+    "body": [
+      "<diaSelect data-type=\"table\"",
+      "           v-model=\"\"",
+      "           is-search",
+      "           url=\"\"",
+      "           :urlData=\"{}\"",
+      "           :onlySelect=\"false\"",
+      "           @changeData=\"selectData\"",
+      "           :tabTagData=\"tableData\"></diaSelect>"
+    ],
+    "description": "放大镜组件-表格型(手动配置)"
+  },
+  "放大镜组件-树型(手动配置)": {
+    "prefix": "diaSelectTree",
+    "body": [
+      "<diaSelect data-type=\"tree\"",
+      "           v-model=\"\"",
+      "           is-search",
+      "           url=\"\"",
+      "           :urlData=\"{}\"",
+      "           :dbClickFlag=\"false\"",
+      "           :onlySelect=\"false\"",
+      "           :defaultProps=\"{",
+      "                   children: 'children',",
+      "                   label: 'name'",
+      "            }\"",
+      "            @changeData=\"selectData\"></diaSelect>",
+      ""
+    ],
+    "description": "放大镜组件-树型(手动配置)"
   }
 }

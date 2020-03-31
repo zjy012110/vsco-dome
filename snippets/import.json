@@ -13,4 +13,11 @@
     ],
     "description": "引入列表搜索栏listFilter"
   },
+  "引入放大镜组件diaSelect": {
+    "prefix": "improt diaSelect",
+    "body": [
+      "import diaSelect from '@/components/diaSelect'"
+    ],
+    "description": "引入放大镜组件diaSelect"
+  },
 }
