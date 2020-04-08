@@ -49,6 +49,7 @@
     "body": [
       "<diaSelect diaSelectType=\"\"",
       "           v-model=\"\"",
+      "           cueString=\"\"",
       "           @changeData=\"selectData\"></diaSelect>"
     ],
     "description": "放大镜组件-类型配置(diaSelectType传入放大镜类型，如：customer)"
@@ -62,6 +63,7 @@
       "           url=\"\"",
       "           :urlData=\"{}\"",
       "           :onlySelect=\"false\"",
+      "           cueString=\"\"",
       "           @changeData=\"selectData\"",
       "           :tabTagData=\"tableData\"></diaSelect>"
     ],
@@ -81,7 +83,8 @@
       "                   children: 'children',",
       "                   label: 'name'",
       "            }\"",
-      "            @changeData=\"selectData\"></diaSelect>",
+      "           cueString=\"\"",
+      "           @changeData=\"selectData\"></diaSelect>",
       ""
     ],
     "description": "放大镜组件-树型(手动配置)"
