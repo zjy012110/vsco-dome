@@ -18,11 +18,7 @@
     "prefix": "diaselect",
     "body": [
       "select${1:Data} (val) {",
-      "  if (!val) {",
-      "    this.\\$set(this.${2:data}, '${3:Id}', null)",
-      "  } else if (val) {",
-      "    this.\\$set(this.${2:data}, '${3:Id}', val.id)",
-      "  }",
+      "  this.\\$set(this.${2:data}, '${3:Id}', val && val.id ? val.id : null)",
       "},"
     ],
     "description": "diaSelect(放大镜选择事件)"
@@ -71,5 +67,12 @@
       "}"
     ],
     "description": "公共合计方法，columsList中[]第一个参数传入要合计的字段，第二个参数为小数位控制"
+  },
+  "set赋值": {
+    "prefix": "$set",
+    "body": [
+      "this.\\$set(this.${1:obj}, '${2:val}', ${3:data})"
+    ],
+    "description": "set赋值---obj：赋值对象; val：赋值字段; data：值"
   }
 }
