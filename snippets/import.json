@@ -34,11 +34,18 @@
     ],
     "description": "引入数值组件numeric"
   },
-  "引入公共合计方法": {
+  "引入公共合计方法getSummariesUtil": {
     "prefix": "improt getSummariesUtil",
     "body": [
       "import { getSummariesUtil } from '@/utils'"
     ],
-    "description": "引入公共合计方法"
+    "description": "引入公共合计方法getSummariesUtil"
+  },
+  "引入列表分页组件pagination": {
+    "prefix": "improt pagination",
+    "body": [
+      "import pagination from '@/components/pagination'"
+    ],
+    "description": "引入列表分页组件pagination"
   }
 }

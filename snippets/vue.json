@@ -119,5 +119,17 @@
       "</listCommon>"
     ],
     "description": "列表表格组件listCommon"
+  },
+  "列表分页组件pagination": {
+    "prefix": "pagination",
+    "body": [
+      "<pagination :currentPage=\"currentPage\"",
+      "            :pageSize=\"pageSize\"",
+      "            :pageSizes=\"pageSizes\"",
+      "            :total=\"total\"",
+      "            @size-change=\"sizeChange\"",
+      "            @current-change=\"currentChange\"></pagination>"
+    ],
+    "description": "列表分页组件-currentPage：当前页；pageSize：每页条数；pageSizes：每页条数选择数组；"
   }
 }

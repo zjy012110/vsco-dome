@@ -14,14 +14,14 @@
     ],
     "description": "http请求 -- url请求地址| method请求方式(get OR post)| data OR params (请求传参形式，默认data)"
   },
-  "放大镜选择事件": {
+  "放大镜选择赋值事件": {
     "prefix": "diaselect",
     "body": [
       "select${1:Data} (val) {",
       "  this.\\$set(this.${2:data}, '${3:Id}', val && val.id ? val.id : null)",
       "},"
     ],
-    "description": "diaSelect(放大镜选择事件)"
+    "description": "diaSelect(放大镜选择赋值事件)"
   },
   "消息提示": {
     "prefix": "$message",
