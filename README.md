@@ -6,7 +6,8 @@ test版本
 
 基于elementUI和vue的二次封装组件和方法项目代码片段
 
-组件引入
+## 组件引入  
+
 | 关键字 | 说明 |
 | --- | --- |
 | improt canEditTable | 引入可编辑列表canEditTable |
@@ -17,7 +18,8 @@ test版本
 | improt getSummariesUtil | 引入公共合计方法getSummariesUtil |
 | improt pagination | 引入列表分页组件pagination |
 
-组件代码片段
+## 组件代码片段  
+
 | 关键字 | 说明 |
 | --- | --- |
 | canEditTable  | 可编辑列表canEditTable |
@@ -30,7 +32,8 @@ test版本
 | getSummariesUtil | 公共合计方法getSummariesUtil |
 | pagination | 列表分页组件pagination |
 
-方法代码片段
+## 方法代码片段  
+
 | 关键字 | 说明 |
 | --- | --- |
 | $http  | http请求 |
