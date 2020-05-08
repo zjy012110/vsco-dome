@@ -143,11 +143,34 @@
     ],
     "description": "公共附件上传组件-附件管理组件   本质为一个弹框，属性：   attachDialog：必须，用v-model绑定，用来操作双向绑定控制显示隐藏；   clientId：可选，委托方ID；   kernelId：可选，核心单据ID（订单ID）   billsId：必须，关联单据ID（当前单据ID）   billType：必须，单据类型"
   },
+  "打印组件printing": {
+    "prefix": "printing",
+    "body": [
+      "<printing :dataList=\"data\"",
+      "          v-if=\"data.id\"",
+      "          billType=\"\"></printing>"
+    ],
+    "description": "打印组件-billType：必填，可在打印配置菜单中查看对应单据billType"
+  },
   "操作记录组件operationRecord": {
     "prefix": "operationRecord",
     "body": [
       "<operationRecord :data=\"data\"></operationRecord>"
     ],
     "description": "操作记录组件operationRecord-data（单据数据）"
+  },
+  "底部操作组件footerOption": {
+    "prefix": "footerOption",
+    "body": [
+      "<footerOption :pageObject=\"data\"",
+      "              :dataHandle=\"dataHandle\"",
+      "              @changeObjData=\"getObject\"",
+      "              :checkList=\"checkList\"",
+      "              billType=\"\"",
+      "              billUrl=\"\"",
+      "              listUrl=\"\">",
+      "</footerOption>"
+    ],
+    "description": "底部操作组件--可通过button插槽插入其他按钮--pageType：页面类型（平台platform、单据bill,报关单customsDeclaration），默认bill；pageObject：页面数据；dataHandle：操作前数据处理方法；changeObjData：操作结束后页面请求数据方法；listUrl：对应列表页的url，用于操作成功跳至列表页；billUrl: 接口名前一段，除去表增删改查的词，如：/p/tenant"
   }
 }

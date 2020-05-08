@@ -36,6 +36,8 @@ test版本
 | pagination | 列表分页组件pagination |
 | upload | 公共附件上传组件upload |
 | operationRecord | 操作记录组件operationRecord |
+| footerOption | 底部操作组件footerOption |
+| printing | 打印组件printing |
 
 ## 方法代码片段  
 

@@ -68,5 +68,19 @@
       "import calculation from '@/utils/calculation'"
     ],
     "description": "引入计算方法calculation--add(x,y)加法；sub(x,y)减法；mul(x,y)乘法；div(x,y)除法"
+  },
+  "引入打印组件printing": {
+    "prefix": "improt printing",
+    "body": [
+      "import printing from '@/views/common/printing'"
+    ],
+    "description": "引入打印组件printing"
+  },
+  "引入底部组件footerOption": {
+    "prefix": "improt footerOption",
+    "body": [
+      "import footerOption from '@/components/footerOption'"
+    ],
+    "description": "引入底部组件"
   }
 }
