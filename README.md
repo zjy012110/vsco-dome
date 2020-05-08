@@ -6,7 +6,7 @@ test版本
 
 基于elementUI和vue的二次封装组件和方法项目代码片段
 
-## 组件引入  
+## 组件、方法引入  
 
 | 关键字 | 说明 |
 | --- | --- |
@@ -17,6 +17,9 @@ test版本
 | improt numeric | 引入数值组件numeric |
 | improt getSummariesUtil | 引入公共合计方法getSummariesUtil |
 | improt pagination | 引入列表分页组件pagination |
+| improt calculation | 引入计算方法calculation |
+| improt operationRecord | 引入操作记录组件operationRecord |
+| improt upload | 引入公共附件组件upload |
 
 ## 组件代码片段  
 
@@ -31,6 +34,8 @@ test版本
 | numeric | 数值组件numeric |
 | getSummariesUtil | 公共合计方法getSummariesUtil |
 | pagination | 列表分页组件pagination |
+| upload | 公共附件上传组件upload |
+| operationRecord | 操作记录组件operationRecord |
 
 ## 方法代码片段  
 

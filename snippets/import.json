@@ -47,5 +47,26 @@
       "import pagination from '@/components/pagination'"
     ],
     "description": "引入列表分页组件pagination"
+  },
+  "引入操作记录组件operationRecord": {
+    "prefix": "improt operationRecord",
+    "body": [
+      "import operationRecord from '@/components/operationRecord'"
+    ],
+    "description": "引入操作记录组件operationRecord"
+  },
+  "引入公共附件组件upload": {
+    "prefix": "improt upload",
+    "body": [
+      "import upload from '@/components/upload'"
+    ],
+    "description": "引入公共附件组件upload"
+  },
+  "引入计算方法calculation": {
+    "prefix": "improt calculation",
+    "body": [
+      "import calculation from '@/utils/calculation'"
+    ],
+    "description": "引入计算方法calculation--add(x,y)加法；sub(x,y)减法；mul(x,y)乘法；div(x,y)除法"
   }
 }

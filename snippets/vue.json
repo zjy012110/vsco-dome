@@ -131,5 +131,23 @@
       "            @current-change=\"currentChange\"></pagination>"
     ],
     "description": "列表分页组件-currentPage：当前页；pageSize：每页条数；pageSizes：每页条数选择数组；"
+  },
+  "公共附件上传组件upload": {
+    "prefix": "upload",
+    "body": [
+      "<upload v-model=\"attachDialog\"",
+      "        billType=\"EntrustImport\"",
+      "        :kernel-id=\"billsId\"",
+      "        :bills-id=\"billsId\"",
+      "        :client-id=\"clientId\"></upload>"
+    ],
+    "description": "公共附件上传组件-附件管理组件   本质为一个弹框，属性：   attachDialog：必须，用v-model绑定，用来操作双向绑定控制显示隐藏；   clientId：可选，委托方ID；   kernelId：可选，核心单据ID（订单ID）   billsId：必须，关联单据ID（当前单据ID）   billType：必须，单据类型"
+  },
+  "操作记录组件operationRecord": {
+    "prefix": "operationRecord",
+    "body": [
+      "<operationRecord :data=\"data\"></operationRecord>"
+    ],
+    "description": "操作记录组件operationRecord-data（单据数据）"
   }
 }
