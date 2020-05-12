@@ -50,7 +50,21 @@ test版本
 | $message.warning | 警告消息提示 |
 | $message.error | 错误消息提示 |
 | getSummariesUtil | 公共合计方法 |
-| $set | set赋值 |
+| $set | set赋值 |  
+
+**调试：**  
+
+VSCode编辑器下按`F5`调试  
+
+**打包：**  
+
+`npm i vsce -g` 安装打包工具  
+
+打包成vsix文件：`vsce package`
+
+**本地安装：**
+
+VSCode点击扩展图标或者按`ctrl+shift+x`，点击扩展列表右上角的`...`(更多操作)，选择从VSIX安装
 
 [github](https://github.com/zjy012110/vsco-dome)
 
