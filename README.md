@@ -4,22 +4,28 @@
 
 test版本
 
-基于elementUI和vue的二次封装组件和方法项目代码片段
+基于elementUI和vue的二次封装组件和方法项目代码片段  
+
+也可以不用插件，直接将代码片段复制到VSCode的用户代码片段中，方便快速更改，免去打包安装环节  
+
+**操作步骤**  
+
+点击VSCode左下角设置>用户代码片段>选择对应的语言格式(例：vue选择vue-html)>粘贴到新建的json文件中
 
 ## 组件、方法引入  
 
 | 关键字 | 说明 |
 | --- | --- |
-| improt canEditTable | 引入可编辑列表canEditTable |
-| improt listFilter | 引入列表搜索栏listFilter |
+| import canEditTable | 引入可编辑列表canEditTable |
+| import listFilter | 引入列表搜索栏listFilter |
 | import listCommon | 引用列表表格组件listCommon |
-| improt diaSelect | 引入放大镜组件diaSelect |
-| improt numeric | 引入数值组件numeric |
-| improt getSummariesUtil | 引入公共合计方法getSummariesUtil |
-| improt pagination | 引入列表分页组件pagination |
-| improt calculation | 引入计算方法calculation |
-| improt operationRecord | 引入操作记录组件operationRecord |
-| improt upload | 引入公共附件组件upload |
+| import diaSelect | 引入放大镜组件diaSelect |
+| import numeric | 引入数值组件numeric |
+| import getSummariesUtil | 引入公共合计方法getSummariesUtil |
+| import pagination | 引入列表分页组件pagination |
+| import calculation | 引入计算方法calculation |
+| import operationRecord | 引入操作记录组件operationRecord |
+| import upload | 引入公共附件组件upload |
 
 ## 组件代码片段  
 

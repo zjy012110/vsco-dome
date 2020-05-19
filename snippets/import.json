@@ -1,13 +1,13 @@
 {
   "引入可编辑列表canEditTable": {
-    "prefix": "improt canEditTable",
+    "prefix": "import canEditTable",
     "body": [
       "import canEditTable from '@/components/canEditTable'"
     ],
     "description": "引入可编辑列表canEditTable"
   },
   "引入列表搜索栏listFilter": {
-    "prefix": "improt listFilter",
+    "prefix": "import listFilter",
     "body": [
       "import listFilter from '@/components/list-filter'"
     ],
@@ -21,63 +21,63 @@
     "description": "引用列表表格组件listCommon"
   },
   "引入放大镜组件diaSelect": {
-    "prefix": "improt diaSelect",
+    "prefix": "import diaSelect",
     "body": [
       "import diaSelect from '@/components/diaSelect'"
     ],
     "description": "引入放大镜组件diaSelect"
   },
   "引入数值组件numeric": {
-    "prefix": "improt numeric",
+    "prefix": "import numeric",
     "body": [
       "import numeric from '@/components/numeric'"
     ],
     "description": "引入数值组件numeric"
   },
   "引入公共合计方法getSummariesUtil": {
-    "prefix": "improt getSummariesUtil",
+    "prefix": "import getSummariesUtil",
     "body": [
       "import { getSummariesUtil } from '@/utils'"
     ],
     "description": "引入公共合计方法getSummariesUtil"
   },
   "引入列表分页组件pagination": {
-    "prefix": "improt pagination",
+    "prefix": "import pagination",
     "body": [
       "import pagination from '@/components/pagination'"
     ],
     "description": "引入列表分页组件pagination"
   },
   "引入操作记录组件operationRecord": {
-    "prefix": "improt operationRecord",
+    "prefix": "import operationRecord",
     "body": [
       "import operationRecord from '@/components/operationRecord'"
     ],
     "description": "引入操作记录组件operationRecord"
   },
   "引入公共附件组件upload": {
-    "prefix": "improt upload",
+    "prefix": "import upload",
     "body": [
       "import upload from '@/components/upload'"
     ],
     "description": "引入公共附件组件upload"
   },
   "引入计算方法calculation": {
-    "prefix": "improt calculation",
+    "prefix": "import calculation",
     "body": [
       "import calculation from '@/utils/calculation'"
     ],
     "description": "引入计算方法calculation--add(x,y)加法；sub(x,y)减法；mul(x,y)乘法；div(x,y)除法"
   },
   "引入打印组件printing": {
-    "prefix": "improt printing",
+    "prefix": "import printing",
     "body": [
       "import printing from '@/views/common/printing'"
     ],
     "description": "引入打印组件printing"
   },
   "引入底部组件footerOption": {
-    "prefix": "improt footerOption",
+    "prefix": "import footerOption",
     "body": [
       "import footerOption from '@/components/footerOption'"
     ],
