@@ -24,11 +24,11 @@ test 版本
 
 消息提示：
 
-![message](images/message.gif)
+![message](https://uploader.shimo.im/f/kFb7fEFdUUEOGcNQ.gif)
 
 分页组件：
 
-![pagination](images/pagination.gif)
+![pagination](https://uploader.shimo.im/f/xswbeM3s8CFDg3vh.gif)
 
 ## 组件、方法引入
 
