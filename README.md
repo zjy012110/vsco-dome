@@ -20,6 +20,16 @@ test 版本
 
 基于 elementUI 和 vue 的二次封装组件和方法项目代码片段
 
+**示例：**
+
+消息提示：
+
+![message](images/message.gif)
+
+分页组件：
+
+![pagination](images/pagination.gif)
+
 ## 组件、方法引入
 
 | 关键字                  | 说明                              |
