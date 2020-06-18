@@ -25,30 +25,22 @@
   },
   "消息提示": {
     "prefix": "$message",
-    "body": [
-      "this.\\$message.${1:type}('${2:message}')"
-    ],
+    "body": ["this.\\$message.${1|success,warning,error|}('${2:message}')"],
     "description": "消息提示: type(消息提示类型) 成功：success, 警告：warning, 错误：error, 一般：无参数"
   },
   "成功消息提示": {
     "prefix": "$message.success",
-    "body": [
-      "this.\\$message.success('${1:message}')"
-    ],
+    "body": ["this.\\$message.success('${1:message}')"],
     "description": "成功消息提示: type(消息提示类型) 成功：success"
   },
   "警告消息提示": {
     "prefix": "$message.warning",
-    "body": [
-      "this.\\$message.warning('${1:message}')"
-    ],
+    "body": ["this.\\$message.warning('${1:message}')"],
     "description": "警告消息提示: type(消息提示类型) 警告：warning"
   },
   "错误消息提示": {
     "prefix": "$message.error",
-    "body": [
-      "this.\\$message.error('${1:message}')"
-    ],
+    "body": ["this.\\$message.error('${1:message}')"],
     "description": "错误消息提示: type(消息提示类型) 错误：error"
   },
   "公共合计方法": {
@@ -70,9 +62,7 @@
   },
   "set赋值": {
     "prefix": "$set",
-    "body": [
-      "this.\\$set(this.${1:obj}, '${2:val}', ${3:data})"
-    ],
+    "body": ["this.\\$set(this.${1:obj}, '${2:val}', ${3:data})"],
     "description": "set赋值---obj：赋值对象; val：赋值字段; data：值"
   }
 }
